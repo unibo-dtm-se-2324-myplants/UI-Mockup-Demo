@@ -163,7 +163,7 @@ container p {
 
 .footer-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -172,7 +172,7 @@ container p {
     background-color: white;
     color: rgb(255, 0, 0);
     padding: 10px 0;
-    height: 30px;
+    height: 35px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -181,13 +181,14 @@ container p {
     color: rgb(44, 44, 44);
     text-decoration: none;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 5px 20px;
+    
 }
 
 .plus-button {
-    font-size: 50px;
+    font-size: 60px;
     color: white;
-    background-color: #563ce7;
+    background-color: #7b63ff;
     border: none;
     border-radius: 50%;
     /* Ensures the border stays circular */
@@ -198,7 +199,7 @@ container p {
     justify-content: center;
     padding: 0;
     position: relative;
-    top: -10px;
+    top: -15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     /* Shadow for depth */
     clip-path: circle(50% at 50% 50%);
@@ -209,6 +210,12 @@ container p {
     /* Minimum height */
 }
 
+.footer-bar:after, .footer-bar:before {
+    content: "";
+    flex: 1;
+}
+
+
 @media (max-width: 600px) {
 
     .plus-button {
@@ -216,8 +223,8 @@ container p {
         /* Responsive width */
         height: 10vw;
         /* Responsive height, maintain aspect ratio */
-        min-width: 50px;
+        min-width: 60px;
         /* Minimum size to maintain visibility and functionality */
-        min-height: 50px;
+        min-height: 60px;
     }
 }
