@@ -22,7 +22,8 @@ footer {
 }
 
 main {
-    padding: 10px;
+    padding-left: 35vw;
+    padding-right: 35vw;
 }
 
 .head {
@@ -227,4 +228,15 @@ container p {
         /* Minimum size to maintain visibility and functionality */
         min-height: 60px;
     }
+
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+
+
+
+
 }

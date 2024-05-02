@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', function () {
         progressText.textContent = progress + '%';
     }
 
-    updateProgressBar(60); // Example percentage
+    updateProgressBar(100); // Example percentage
 });
