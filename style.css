@@ -40,7 +40,6 @@ main {
 .water {
     background: rgb(193, 244, 255);
     border: solid 1px #b0dbff;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +50,8 @@ main {
     border-radius: 50px;
 }
 
-container {
+.plant-container,
+.water-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,10 +59,10 @@ container {
     color: #333;
 }
 
-container p {
+.plant-container p,
+.water-container p {
     margin-right: 10px;
     color: #1a98ff;
-
 }
 
 .plant-img-icon {
@@ -78,10 +78,6 @@ container p {
     height: 25px;
     margin: 10px;
     padding-bottom: 5px;
-}
-
-container p {
-    margin-right: 10px;
 }
 
 .img-box {
@@ -100,7 +96,6 @@ container p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
     border: 1px solid #fff25e;
-
 }
 
 .plant h2 {
@@ -119,7 +114,6 @@ container p {
     font-weight: 500;
     text-align: center;
     font-style: italic;
-
 }
 
 .plant p {
@@ -129,16 +123,14 @@ container p {
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 0;
-
 }
-
 
 .progress-container {
     margin: 10px;
     width: auto;
     background-color: #ddd;
     border-radius: 5px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .progress-bar {
@@ -149,7 +141,8 @@ container p {
     align-items: center;
     justify-content: center;
     transition: width 1s ease;
-    width: 30%; /* Initial state */
+    width: 30%;
+    /* Initial state */
 }
 
 .progress-text {
@@ -157,10 +150,6 @@ container p {
     font-size: 10px;
     font-weight: bold;
 }
-
-
-
-
 
 .footer-bar {
     display: flex;
@@ -183,7 +172,6 @@ container p {
     text-decoration: none;
     font-size: 16px;
     padding: 5px 20px;
-    
 }
 
 .plus-button {
@@ -211,7 +199,8 @@ container p {
     /* Minimum height */
 }
 
-.footer-bar:after, .footer-bar:before {
+.footer-bar:after,
+.footer-bar:before {
     content: "";
     flex: 1;
 }
@@ -233,10 +222,4 @@ container p {
         padding-left: 10px;
         padding-right: 10px;
     }
-
-
-
-
-
-
 }

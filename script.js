@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    function updateProgressBar(progress) {
-        const progressBar = document.querySelector('.progress-bar');
-        const progressText = document.querySelector('.progress-text');
+    function updateProgressBar(progress, idSuffix) {
+        const progressBar = document.querySelector(`#progress-bar-${idSuffix}`);
+        const progressText = document.querySelector(`#progress-text-${idSuffix}`);
         progressBar.style.width = progress + '%';
         progressText.textContent = progress + '%';
     }
 
-    updateProgressBar(100); // Example percentage
+    updateProgressBar(100, 1);
+    updateProgressBar(50, 2);
 });

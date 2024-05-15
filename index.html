@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myplants</title>
+    <title>MyPlants</title>
     <link rel="icon" type="image/x-icon" href="https://www.iconpacks.net/icons/2/free-plant-icon-1573-thumb.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
-
 </head>
-
-
 
 <body>
     <header>
         <h1 class="head">MyPlantsApp</h1>
         <img class="userimg"
-            src="https://www.docomentary.com/wp-content/uploads/2024/04/user-profile-icon-free-vector.jpg" alt="user">
+            src="https://www.docomentary.com/wp-content/uploads/2024/04/user-profile-icon-free-vector.jpg"
+            alt="user profile">
     </header>
 
     <main>
@@ -27,18 +24,18 @@
 
         <section class="water">
 
-            <container>
+            <div class="plant-container">
                 <img class="plant-img-icon"
                     src="https://www.docomentary.com/wp-content/uploads/2024/04/kit-da-10-piante-grasse-in-vaso-10cm-300x182.jpg"
                     alt="plant">
                 <h2>Maria</h2>
-            </container>
+            </div>
 
-            <container>
+            <div class="water-container">
                 <img class="drop" src="https://www.docomentary.com/wp-content/uploads/2024/04/water-drop-icon.svg"
                     alt="drop">
                 <p>50ml</p>
-            </container>
+            </div>
 
         </section>
 
@@ -47,29 +44,35 @@
         <section class="plant">
             <img class="img-box"
                 src="https://www.docomentary.com/wp-content/uploads/2024/04/kit-da-10-piante-grasse-in-vaso-10cm-300x182.jpg"
-
                 alt="plant-img">
             <h2>Maria</h2>
             <h3>Crassula ovata</h3>
-            <p>La Crassula ovata, nota anche come albero di giada o pianta della moneta, è una pianta grassa originaria del Sud Africa. Caratterizzata da foglie carnose, spesse e lucide di colore verde brillante, spesso con bordi rossastri, cresce come un piccolo arbusto. È molto apprezzata come pianta d'appartamento per la sua facile manutenzione e la capacità di tollerare la siccità. Fiorisce in inverno producendo piccoli fiori stellati di colore bianco o rosa.</p>
+            <p>La Crassula ovata, nota anche come albero di giada o pianta della moneta, è una pianta grassa originaria
+                del Sud Africa. Caratterizzata da foglie carnose, spesse e lucide di colore verde brillante, spesso con
+                bordi rossastri, cresce come un piccolo arbusto. È molto apprezzata come pianta d'appartamento per la
+                sua facile manutenzione e la capacità di tollerare la siccità. Fiorisce in inverno producendo piccoli
+                fiori stellati di colore bianco o rosa.</p>
             <div class="progress-container">
-                <div class="progress-bar" style="width: 0%;">
-                    <div class="progress-text">0%</div>
+                <div class="progress-bar" id="progress-bar-1" style="width: 0%;">
+                    <div class="progress-text" id="progress-text-1">0%</div>
                 </div>
             </div>
 
         </section>
 
         <section class="plant">
-            <img class="img-box"                
-                src="https://www.focusjunior.it/content/uploads/2016/04/piante-grasse-3.jpg"
+            <img class="img-box" src="https://www.focusjunior.it/content/uploads/2016/04/piante-grasse-3.jpg"
                 alt="plant-img">
             <h2>Giovanna</h2>
             <h3>Crassula ovata</h3>
-            <p>La Crassula ovata, nota anche come albero di giada o pianta della moneta, è una pianta grassa originaria del Sud Africa. Caratterizzata da foglie carnose, spesse e lucide di colore verde brillante, spesso con bordi rossastri, cresce come un piccolo arbusto. È molto apprezzata come pianta d'appartamento per la sua facile manutenzione e la capacità di tollerare la siccità. Fiorisce in inverno producendo piccoli fiori stellati di colore bianco o rosa.</p>
+            <p>La Crassula ovata, nota anche come albero di giada o pianta della moneta, è una pianta grassa originaria
+                del Sud Africa. Caratterizzata da foglie carnose, spesse e lucide di colore verde brillante, spesso con
+                bordi rossastri, cresce come un piccolo arbusto. È molto apprezzata come pianta d'appartamento per la
+                sua facile manutenzione e la capacità di tollerare la siccità. Fiorisce in inverno producendo piccoli
+                fiori stellati di colore bianco o rosa.</p>
             <div class="progress-container">
-                <div class="progress-bar" style="width: 0%;">
-                    <div class="progress-text">0%</div>
+                <div class="progress-bar" id="progress-bar-2" style="width: 0%;">
+                    <div class="progress-text" id="progress-text-2">0%</div>
                 </div>
             </div>
 
@@ -88,6 +91,9 @@
     <footer>
         <p>© My Plants App</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
